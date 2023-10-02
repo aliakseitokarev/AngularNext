@@ -1,0 +1,40 @@
+:host {
+  background-color: #e5e5e5;
+  display: block;
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  list-style-type: none;
+  margin: 0;
+  padding: 15px 0 20px;
+  font-size: 12px;
+
+  a {
+    text-decoration: none;
+    color: rgb(95, 95, 95);
+  }
+
+  li {
+    margin-right: 10px;
+
+    .sort-direction {
+      position: relative;
+      top: 8px;
+    }
+    .filters-title {
+      margin-right: 10px;
+    }
+    .sort-text {
+      margin-left: 10px;
+    }
+  }
+
+  .sort-word {
+    position: relative;
+    top: 7px;
+  }
+}

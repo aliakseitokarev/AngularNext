@@ -1,0 +1,42 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #e5e5e5;
+
+  .mat-mdc-raised-button {
+    color: #e5e5e5;
+    background-color: #2f80ed;
+  }
+}
+
+.youtube-form-field {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  margin-left: 5px;
+
+  .mat-mdc-raised-button {
+    text-align: center;
+    position: relative;
+    border-radius: 0 4px 4px 0;
+    min-width: auto;
+  }
+  .search-text {
+    width: 100%;
+    line-height: 32px;
+    border: 1px solid transparent;
+  }
+  .search-text:focus-visible {
+    outline: none;
+  }
+}
+
+.options {
+  padding: 0;
+  margin-left: 5px;
+  min-width: 36px;
+}

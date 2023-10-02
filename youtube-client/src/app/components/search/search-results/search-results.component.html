@@ -1,1 +1,15 @@
-<p>search-results works!</p>
+<app-filter
+  *ngIf="isFilters"
+  (filterText)="filterItems($event)"
+  (sortData)="sortItems($event)"
+></app-filter>
+<div class="search-wrapper" *ngIf="isFirstSubmit">
+  <app-search-item
+    *ngFor="
+      let searchItem of searchItems
+        | textFilter : filterText
+        | orderBy : sortOptions
+    "
+    [searchItem]="searchItem"
+  ></app-search-item>
+</div>

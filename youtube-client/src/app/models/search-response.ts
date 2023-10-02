@@ -1,4 +1,4 @@
-import { ISearchItem } from '../../../models/search-item';
+import { ISearchItem } from './search-item';
 
 export interface ISearchResponse {
   kind: string;
