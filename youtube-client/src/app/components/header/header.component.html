@@ -13,12 +13,12 @@
     </button>
   </form>
   <button mat-raised-button class="options" (click)="toggleFilterBlock()">
-    <img src="../../../../assets/search-options.svg" alt="options" />
+    <img src="../../../assets/search-options.svg" alt="options" />
   </button>
-  <!-- <app-login></app-login>
-  <app-filter
-    *ngIf=(isFilters)
-    (sortOptions)="getSortOptions($event)"
-    (filterItems)="setFilterText($event)">
-  </app-filter> -->
+  <div class="login-data">
+    <span class="login-name">{{ loginName }}</span>
+    <button mat-raised-button class="login" (click)="toggleFilterBlock()">
+      <img src="../../../assets/login.svg" alt="login" />
+    </button>
+  </div>
 </header>

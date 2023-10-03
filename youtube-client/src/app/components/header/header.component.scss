@@ -24,6 +24,10 @@
     position: relative;
     border-radius: 0 4px 4px 0;
     min-width: auto;
+
+    &:hover {
+      box-shadow: none;
+    }
   }
   .search-text {
     width: 100%;
@@ -39,4 +43,37 @@
   padding: 0;
   margin-left: 5px;
   min-width: 36px;
+
+  &:hover {
+    box-shadow: none;
+  }
+}
+
+.login-data {
+  position: fixed;
+  right: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+
+  .login-name {
+    margin-right: 10px;
+    cursor: text;
+  }
+
+  .login {
+    padding: 0;
+    margin-left: 5px;
+    min-width: 36px;
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: none;
+    }
+
+    img {
+      display: block;
+    }
+  }
 }

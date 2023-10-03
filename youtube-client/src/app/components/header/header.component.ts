@@ -2,6 +2,7 @@ import {
   ChangeDetectionStrategy,
   Component,
   EventEmitter,
+  Input,
   Output,
 } from '@angular/core';
 
@@ -12,6 +13,7 @@ import {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class HeaderComponent {
+  @Input() public loginName: string = 'Your name';
   @Output() isfilterBlock: EventEmitter<boolean> = new EventEmitter();
   @Output() submitRequest: EventEmitter<string> = new EventEmitter();
 
