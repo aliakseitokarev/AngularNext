@@ -1,0 +1,6 @@
+{
+  "prettier.endOfLine": "crlf",
+  "prettier.bracketSameLine": true,
+  "prettier.singleAttributePerLine": true,
+  "prettier.trailingComma": "all"
+}
