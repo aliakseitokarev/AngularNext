@@ -13,7 +13,7 @@ export const searchMockResponse: ISearchResponse = {
       etag: '"Fznwjl6JEQdo1MGvHOGaz_YanRU/tmmI1yiRrmLWlKikXk1gD3TXsUI"',
       id: 'YN8zNnV0sK8',
       snippet: {
-        publishedAt: '2023-07-20T12:42:19.000Z',
+        publishedAt: '2024-01-20T12:42:19.000Z',
         channelId: 'UCg8ss4xW9jASrqWGP30jXiw',
         title: 'Angular 8 - Быстрый курс за 60 минут',
         description:
@@ -95,7 +95,7 @@ export const searchMockResponse: ISearchResponse = {
       etag: '"Fznwjl6JEQdo1MGvHOGaz_YanRU/uto79F2R8W05GFpiUAcLdFGs7PQ"',
       id: 'Fdf5aTYRW0E',
       snippet: {
-        publishedAt: '2023-10-02T13:46:58.000Z',
+        publishedAt: '2024-02-12T13:46:58.000Z',
         channelId: 'UC29ju8bIPH5as8OGnQzwJyA',
         title: 'Angular Crash Course',
         description:

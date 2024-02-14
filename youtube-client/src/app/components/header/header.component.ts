@@ -13,11 +13,14 @@ import {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class HeaderComponent {
-  @Input() public loginName: string = 'Your name';
+  @Input() public loginName = 'Your name';
+
   @Output() isfilterBlock: EventEmitter<boolean> = new EventEmitter();
+
   @Output() submitRequest: EventEmitter<string> = new EventEmitter();
 
   public inputText = '';
+
   public isFilters = false;
 
   public setSearchRequest(): void {

@@ -21,28 +21,6 @@
     transform: scale(0.98);
   }
 
-  .statistics {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-
-    li {
-      display: inline-block;
-      font-size: 10px;
-      margin-right: 2px;
-      svg {
-        position: relative;
-        top: 2px;
-        right: 1px;
-        path {
-          fill: black;
-        }
-      }
-    }
-  }
   .mat-mdc-card-image {
     width: 100%;
     overflow: hidden;

@@ -11,6 +11,7 @@ import { FilterComponent } from './components/search/filter/filter.component';
 import { TextFilterPipe } from './pipes/textFilter.pipe';
 import { OrderByPipe } from './pipes/orderBy.pipe';
 import { BorderColorDirective } from './directives/border-color.directive';
+import { CardStatisticComponent } from './components/search/search-item/card-statistic/card-statistic.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { BorderColorDirective } from './directives/border-color.directive';
     TextFilterPipe,
     OrderByPipe,
     BorderColorDirective,
+    CardStatisticComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, SharedModule],
   providers: [],

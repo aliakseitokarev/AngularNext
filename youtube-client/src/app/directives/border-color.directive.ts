@@ -5,7 +5,7 @@ import { getItemBottomBorderColor } from '../common/helper';
   selector: '[appBorderColor]',
 })
 export class BorderColorDirective {
-  @HostBinding('style.border-bottom') public borderBottom: string = '';
+  @HostBinding('style.border-bottom') public borderBottom = '';
 
   @Input('appBorderColor') public set borderColor(publishedDate: string) {
     if (publishedDate) {

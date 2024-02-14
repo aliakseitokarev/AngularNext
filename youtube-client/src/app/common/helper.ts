@@ -1,6 +1,6 @@
-import { BorderColors, MS_TIME } from './constnts';
+import { BorderColors, MS_TIME } from './constants';
 
-export const getItemBottomBorderColor = (publishedTime: string): string => {
+const getItemBottomBorderColor = (publishedTime: string): string => {
   const now: number = new Date().getTime();
   const timeAfterPublication: number = now - Date.parse(publishedTime);
   let borderColor: string = BorderColors.yellow;
@@ -12,3 +12,17 @@ export const getItemBottomBorderColor = (publishedTime: string): string => {
 
   return borderColor;
 };
+
+type SortFuncType = (
+  firstItem: number,
+  seconItem: number,
+  orderBy: number
+) => number;
+
+const sortFunc: SortFuncType = (
+  firstItem: number,
+  seconItem: number,
+  orderBy: number
+) => (firstItem - seconItem) * orderBy;
+
+export { getItemBottomBorderColor, sortFunc };
