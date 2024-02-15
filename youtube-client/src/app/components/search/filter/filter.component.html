@@ -1,0 +1,29 @@
+<ul class="filters">
+  <li class="sort-date">
+    <span class="filters-title">Sorting by:</span>
+    <a href="javascript:void(0)" (click)="toggleSortDirection('date')">
+      <span><b>date</b></span>
+      <mat-icon class="sort-direction">{{
+        sortOptions.sortType === "date" ? sortOptions.sortIconView : ""
+      }}</mat-icon>
+    </a>
+  </li>
+  <li class="sort-views">
+    <a href="javascript:void(0)" (click)="toggleSortDirection('viewsCount')">
+      <span><b>count of views</b></span>
+      <mat-icon class="sort-direction">{{
+        sortOptions.sortType === "viewsCount" ? sortOptions.sortIconView : ""
+      }}</mat-icon>
+    </a>
+  </li>
+  <li class="sort-word">
+    <span>by word or sentence</span>
+    <input
+      class="sort-text"
+      type="text"
+      id="sortBy"
+      [(ngModel)]="filteringTextData"
+      (input)="onFilter()"
+    />
+  </li>
+</ul>

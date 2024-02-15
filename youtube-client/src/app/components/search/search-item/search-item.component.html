@@ -1,0 +1,18 @@
+<mat-card
+  *ngIf="searchItem"
+  class="example-card"
+  [appBorderColor]="searchItem.snippet.publishedAt"
+>
+  <img
+    mat-card-image
+    [src]="searchItem.snippet.thumbnails.default.url"
+    alt="thumbnails picture"
+  />
+  <app-card-statistic [statistics]="searchItem.statistics"></app-card-statistic>
+  <mat-card-content>
+    <mat-card-title>{{ searchItem.snippet.title }}</mat-card-title>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button>more...</button>
+  </mat-card-actions>
+</mat-card>

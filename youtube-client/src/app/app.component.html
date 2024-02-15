@@ -1,0 +1,10 @@
+<app-header
+  (isfilterBlock)="toggleFilterBlock($event)"
+  (submitRequest)="submitRequest($event)"
+></app-header>
+<app-search-results
+  [isFilters]="isFilters"
+  [isFirstSubmit]="isFirstSubmit"
+  [searchItems]="searchItems"
+>
+</app-search-results>

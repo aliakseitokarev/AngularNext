@@ -1,0 +1,24 @@
+<header class="header">
+  <img src="../../../assets/logo.svg" alt="logo" />
+  <form class="youtube-form-field">
+    <input
+      class="search-text"
+      name="searchInput"
+      type="text"
+      placeholder="Something to find..."
+      [(ngModel)]="inputText"
+    />
+    <button mat-raised-button type="submit" (click)="setSearchRequest()">
+      <span>search</span>
+    </button>
+  </form>
+  <button mat-raised-button class="options" (click)="toggleFilterBlock()">
+    <img src="../../../assets/search-options.svg" alt="options" />
+  </button>
+  <div class="login-data">
+    <span class="login-name">{{ loginName }}</span>
+    <button mat-raised-button class="login" (click)="toggleFilterBlock()">
+      <img src="../../../assets/login.svg" alt="login" />
+    </button>
+  </div>
+</header>

@@ -1,0 +1,54 @@
+// :host {
+//   width: 264px / 1200px * 100%;
+// }
+
+.mdc-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 264px;
+  height: 322px;
+  padding: 20px;
+  cursor: pointer;
+  margin: 15px;
+  background-color: #e5e5e5;
+
+  transition: all 0.5s ease-in-out;
+
+  &:hover {
+    transform: scale(0.98);
+  }
+
+  .mat-mdc-card-image {
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+    object-fit: cover;
+  }
+
+  .mat-mdc-card-content {
+    margin: 0;
+    height: 25%;
+    overflow: hidden;
+
+    .mat-mdc-card-title {
+      min-width: 224px;
+      font-size: 1rem;
+      text-align: end;
+    }
+  }
+
+  .mat-mdc-card-actions {
+    margin: 0;
+    padding: 0;
+
+    .mat-mdc-button {
+      color: #e5e5e5;
+      background-color: rgb(32, 133, 216);
+    }
+  }
+}
+
+
