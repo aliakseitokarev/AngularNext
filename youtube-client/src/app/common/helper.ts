@@ -15,14 +15,14 @@ const getItemBottomBorderColor = (publishedTime: string): string => {
 
 type SortFuncType = (
   firstItem: number,
-  seconItem: number,
+  secondItem: number,
   orderBy: number
 ) => number;
 
 const sortFunc: SortFuncType = (
   firstItem: number,
-  seconItem: number,
+  secondItem: number,
   orderBy: number
-) => (firstItem - seconItem) * orderBy;
+) => (firstItem - secondItem) * orderBy;
 
 export { getItemBottomBorderColor, sortFunc };
